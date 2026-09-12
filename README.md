@@ -15,6 +15,8 @@
 
 Oddiy statik hostingga repozitoriy fayllarini joylash kifoya. Build yoki tashqi paketlar talab qilinmaydi. Har bir variant papkasini alohida hostingga ko‘chirish ham mumkin.
 
+Vercel `vercel.json` orqali Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` nusxasini beradi. Asl HTML boshqa brauzer va statik hostinglar uchun saqlangan. HTMLni tahrirlaganda unga mos `.html.br` faylini ham qayta siqish kerak; tashqi `js/config.js` ni sozlash bunga ta’sir qilmaydi.
+
 Lokal ko‘rish:
 
 ```sh

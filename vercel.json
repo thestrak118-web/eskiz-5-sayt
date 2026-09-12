@@ -2,22 +2,18 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "routes": [
     {
-      "src": "^/__perf\\-probe/a\\-brotli11\\.html\\.br$",
+      "src": "^/(?:index\\.html(?:\\.br)?|[a-e]/(?:index\\.html(?:\\.br)?)?)?$",
       "methods": [
         "GET",
         "HEAD"
       ],
       "headers": {
-        "Content-Type": "text/html; charset=utf-8",
-        "Content-Encoding": "br",
-        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
-        "Vary": "Accept-Encoding",
-        "X-Perf-Representation": "direct-br"
+        "Vary": "Accept-Encoding"
       },
       "continue": true
     },
     {
-      "src": "^/__perf\\-probe/a\\-brotli11\\.html$",
+      "src": "^/(?:index\\.html(?:\\.br)?)?$",
       "methods": [
         "GET",
         "HEAD"
@@ -36,26 +32,225 @@
           "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
         }
       ],
-      "dest": "/__perf-probe/a-brotli11.html.br",
+      "dest": "/index.html.br",
       "headers": {
         "Content-Type": "text/html; charset=utf-8",
         "Content-Encoding": "br",
-        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
         "Vary": "Accept-Encoding",
-        "X-Perf-Representation": "precompressed"
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
       }
     },
     {
-      "src": "^/__perf\\-probe/a\\-brotli11\\.html$",
+      "src": "^/a/(?:index\\.html(?:\\.br)?)?$",
       "methods": [
         "GET",
         "HEAD"
       ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
+        }
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/a/index.html.br",
       "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
         "Vary": "Accept-Encoding",
-        "X-Perf-Representation": "plain-file"
-      },
-      "continue": true
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
+      }
+    },
+    {
+      "src": "^/b/(?:index\\.html(?:\\.br)?)?$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
+        }
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/b/index.html.br",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
+      }
+    },
+    {
+      "src": "^/c/(?:index\\.html(?:\\.br)?)?$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
+        }
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/c/index.html.br",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
+      }
+    },
+    {
+      "src": "^/d/(?:index\\.html(?:\\.br)?)?$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
+        }
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/d/index.html.br",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
+      }
+    },
+    {
+      "src": "^/e/(?:index\\.html(?:\\.br)?)?$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
+        }
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/e/index.html.br",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform"
+      }
+    },
+    {
+      "src": "^/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "src": "^/a/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/a/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "src": "^/b/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/b/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "src": "^/c/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/c/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "src": "^/d/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/d/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "src": "^/e/index\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "dest": "/e/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding"
+      }
     },
     {
       "handle": "filesystem"

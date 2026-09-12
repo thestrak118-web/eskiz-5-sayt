@@ -24,4 +24,7 @@ Telegram ulanmaguncha thank you sahifasidagi kanal tugmasi o‘chirilgan.
 
 Dizayn, matnlar, sanalar va Launch shrifti yuborilgan ZIPdan saqlangan.
 Rasmlar AVIF va shrift WOFF2 formatida yengillashtirilgan.
+Vercel konfiguratsiyasi br qo‘llaydigan brauzerga oldindan siqilgan HTMLni beradi.
+Oddiy HTML ham saqlangan. HTMLni o‘zgartirganda uning .html.br nusxasini ham
+qayta yarating; aks holda brauzerlarda turli versiyalar ochiladi.
 Ushbu paket Figma fayli emas; yangi Figma maketi talab qilinmagan.
