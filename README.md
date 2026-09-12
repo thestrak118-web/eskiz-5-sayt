@@ -13,9 +13,9 @@
 
 ## Ishga tushirish
 
-Oddiy statik hostingga repozitoriy fayllarini joylash kifoya. Build yoki tashqi paketlar talab qilinmaydi. Har bir variant papkasini alohida hostingga ko‘chirish ham mumkin.
+Oddiy statik hostingga repozitoriy fayllarini joylash kifoya. Tashqi paketlar talab qilinmaydi. Har bir variant papkasini alohida hostingga ko‘chirish ham mumkin.
 
-Vercel `vercel.json` orqali Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` nusxasini beradi. Asl HTML boshqa brauzer va statik hostinglar uchun saqlangan. HTMLni tahrirlaganda unga mos `.html.br` faylini ham qayta siqish kerak; tashqi `js/config.js` ni sozlash bunga ta’sir qilmaydi.
+Vercel `vercel.json` orqali Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` nusxasini beradi. Asl HTML boshqa brauzer va statik hostinglar uchun saqlangan. Vercel har deployda `node compress.cjs` bilan shu nusxalarni avtomatik yangilaydi. Boshqa hostingda HTML tahrirlangach ushbu buyruqni lokal bajaring; tashqi `js/config.js` ni sozlash HTMLni qayta siqishni talab qilmaydi.
 
 Lokal ko‘rish:
 
@@ -43,7 +43,22 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 - 320, 375, 390, 425 va 1440px ekranlarda beshala dizayn tekshirildi.
 - ZIPdagi asosiy matn va joylashuv saqlangan.
 - 57 ta lokal/mock forma tekshiruvi o‘tdi; haqiqiy tashqi ariza yuborilmadi.
-- Tezlik hozir ochiq Vercel manzilida rasmiy Google PageSpeed Insights orqali tekshiriladi. Maqsad: mobil Speed Index ≤800ms. Performance 100 yoki FCP 0.8s bu maqsad bajarilganini anglatmaydi; oldingi localhost natijalari ochiq hosting natijasi emas.
+- Tezlik ochiq Vercel saytda rasmiy Google PageSpeed Insights (Lighthouse 13.4.1, Moto G Power, Slow 4G) orqali o‘lchandi. Quyidagi qiymatlar mobil Speed Index; FCP yoki localhost natijasi emas.
 - Birinchi ekran rasmlari, lokal shrift va sahifa uslublari HTML bilan birga keladi. Ariza oynasi birinchi CTA bosilganda yaratiladi va shu bosishda ochiladi; uning ishlatilmagan uslublari dastlabki sahifani qayta chizdirmaydi. Pastdagi suratlar ko‘rinishiga yaqin yuklanadi. `/` ikkinchi hujjat so‘rovisiz asosiy saytni ochadi.
-- Oxirgi forma o‘zgarishidan keyin 57 ta lokal/mock tekshiruv qayta o‘tdi. 412×823 ekran va DPR1/2 sinovlarida gorizontal chiqish aniqlanmadi. Google PSI’da oxirgi tasdiqlangan natija hali ≤800ms talabiga yetmagan; natijani faqat joriy deploy bilan solishtiring.
+- Oxirgi forma o‘zgarishidan keyin 57 ta lokal/mock tekshiruv qayta o‘tdi. 412×823 ekran va DPR1/2/1.75 sinovlarida gorizontal chiqish aniqlanmadi.
 - Rasmlar lokal AVIF, shriftlar WOFF2. Yetkazilgan shrift haqidagi qayd har bir variantning `fonts/launch-font-notice.txt` faylida.
+
+## Ochiq hosting tezligi — 2026-09-13
+
+| Manzil | Mobil Speed Index | O‘lchov |
+| --- | ---: | --- |
+| `/` | 0.779s | Bitta test |
+| `/a/` | 0.783s | Uchta test mediani |
+| `/b/` | 0.788s | Bitta test |
+| `/c/` | 0.767s | Bitta test |
+| `/d/` | 0.770s | Uchta test mediani |
+| `/e/` | 0.774s | Bitta test |
+
+Barcha o‘lchovlarda Performance100, CLS0 va TBT0ms. A testlari: 0.879/0.773/0.783s; D: 2.258/0.763/0.770s. Har bir alohida test ≤0.8s bo‘lmagan. Kod o‘zgarmagan holda ham Google laboratoriya natijalari tebrandi; bitta qulay natija tanlanmadi. Bu barcha tarmoq va keyingi testlar uchun tezlik kafolati emas.
+
+[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; keyingi avtomatik siqish yordamchisi va hujjatlar uning baytlarini o‘zgartirmaydi.

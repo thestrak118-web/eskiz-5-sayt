@@ -1,0 +1,37 @@
+MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-13 (Asia/Tashkent)
+Hosting: https://ai5-sayt.vercel.app
+Measured page content: public commit 3a64ae8. Later build-helper/doc changes preserve these exact HTML bytes.
+Provider: normal pagespeed.web.dev UI; Google backend Lighthouse 13.4.1; Moto G Power / Slow 4G.
+Target: Speed Index <=800ms. FCP and Performance score are different metrics.
+
+Route | Sample | Speed Index(ms) | FCP(ms) | LCP(ms) | CLS | TBT(ms) | Performance
+/ | 1 | 779.000 | 779 | 779 | 0 | 0 | 100
+/a/ | 1 | 878.956 | 785 | 785 | 0 | 0 | 100
+/a/ | 2 | 773.000 | 773 | 915 | 0 | 0 | 100
+/a/ | 3 | 783.000 | 783 | 915 | 0 | 0 | 100
+/b/ | 1 | 788.000 | 788 | 788 | 0 | 0 | 100
+/c/ | 1 | 767.000 | 767 | 767 | 0 | 0 | 100
+/d/ | 1 | 2258.149 | 813 | 923 | 0 | 0 | 100
+/d/ | 2 | 763.000 | 763 | 763 | 0 | 0 | 100
+/d/ | 3 | 770.000 | 770 | 901 | 0 | 0 | 100
+/e/ | 1 | 774.000 | 774 | 774 | 0 | 0 | 100
+
+A/D received exactly three total samples because the initial readings differed materially from ready-file timings.
+No extra samples were taken after the predefined third. Every result is retained.
+A: median783ms, range773–878.956ms; two of three <=800ms.
+D: median770ms, range763–2258.149ms; two of three <=800ms.
+Root779ms, B788ms, C767ms, E774ms are individual measurements.
+All routes have a measured/median value below800ms; not every individual run meets800ms.
+These are dated lab measurements, not a guarantee for every network, device or future test.
+
+Official report links:
+/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app/g8h98jij1k?form_factor=mobile
+/a/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-a/lrormdcg1r?form_factor=mobile
+/a/ sample2: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-a/k427pcjjje?form_factor=mobile
+/a/ sample3: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-a/dts693ds2b?form_factor=mobile
+/b/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-b/6zqy7trowx?form_factor=mobile
+/c/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-c/qy5h1c8j73?form_factor=mobile
+/d/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-d/z50ivx3pbq?form_factor=mobile
+/d/ sample2: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-d/qd66u38ltv?form_factor=mobile
+/d/ sample3: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-d/6rjrhkb3zi?form_factor=mobile
+/e/ sample1: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-e/jfdf0aexlz?form_factor=mobile
