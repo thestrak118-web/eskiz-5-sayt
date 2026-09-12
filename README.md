@@ -15,7 +15,7 @@
 
 Oddiy statik hostingga repozitoriy fayllarini joylash kifoya. Tashqi paketlar talab qilinmaydi. Har bir variant papkasini alohida hostingga ko‘chirish ham mumkin.
 
-Vercel `vercel.json` orqali Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` nusxasini beradi. Asl HTML boshqa brauzer va statik hostinglar uchun saqlangan. Vercel har deployda `node compress.cjs` bilan shu nusxalarni avtomatik yangilaydi. Boshqa hostingda HTML tahrirlangach ushbu buyruqni lokal bajaring; tashqi `js/config.js` ni sozlash HTMLni qayta siqishni talab qilmaydi.
+Vercel `vercel.json` orqali Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` nusxasini beradi. Asl HTML boshqa brauzer va statik hostinglar uchun saqlangan. HTML tahrirlangach `node compress.cjs` buyrug‘ini lokal bajaring va yangilangan `.html.br` fayllarni HTML bilan birga commit/yuklang; tashqi `js/config.js` ni sozlash HTMLni qayta siqishni talab qilmaydi.
 
 Lokal ko‘rish:
 
@@ -61,4 +61,4 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 
 Barcha o‘lchovlarda Performance100, CLS0 va TBT0ms. A testlari: 0.879/0.773/0.783s; D: 2.258/0.763/0.770s. Har bir alohida test ≤0.8s bo‘lmagan. Kod o‘zgarmagan holda ham Google laboratoriya natijalari tebrandi; bitta qulay natija tanlanmadi. Bu barcha tarmoq va keyingi testlar uchun tezlik kafolati emas.
 
-[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; keyingi avtomatik siqish yordamchisi va hujjatlar uning baytlarini o‘zgartirmaydi.
+[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; keyingi siqish yordamchisi va hujjatlar uning baytlarini o‘zgartirmaydi.

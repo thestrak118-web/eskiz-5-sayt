@@ -27,6 +27,6 @@ Rasmlar AVIF va shrift WOFF2 formatida yengillashtirilgan.
 Vercel konfiguratsiyasi br qo‘llaydigan brauzerga oldindan siqilgan HTMLni beradi.
 Oddiy HTML ham saqlangan. HTMLni o‘zgartirganda uning .html.br nusxasini ham
 qayta yarating; aks holda brauzerlarda turli versiyalar ochiladi.
-Vercel har deployda node compress.cjs orqali nusxalarni avtomatik yangilaydi.
-Boshqa hosting uchun: node compress.cjs — tashqi paketsiz qayta siqadi.
+HTML tahriridan keyin: node compress.cjs — tashqi paketsiz qayta siqadi.
+Tayyor .html.br nusxalarni HTML bilan birga commit yoki hostingga yuklang.
 Ushbu paket Figma fayli emas; yangi Figma maketi talab qilinmagan.

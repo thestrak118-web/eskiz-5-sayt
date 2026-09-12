@@ -1,7 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "buildCommand": "node compress.cjs",
   "routes": [
     {
       "src": "^/(?:index\\.html(?:\\.br)?|[a-e]/(?:index\\.html(?:\\.br)?)?)?$",
