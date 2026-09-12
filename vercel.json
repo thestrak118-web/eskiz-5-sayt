@@ -1,26 +1,64 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "headers": [
+  "routes": [
     {
-      "source": "/__perf-probe/a-brotli11.html.br",
-      "headers": [
+      "src": "^/__perf\\-probe/a\\-brotli11\\.html\\.br$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "Vary": "Accept-Encoding",
+        "X-Perf-Representation": "direct-br"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/__perf\\-probe/a\\-brotli11\\.html$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "has": [
         {
-          "key": "Content-Encoding",
-          "value": "br"
-        },
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate, no-transform"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*(?:;[ \\t]*[qQ][ \\t]*=[ \\t]*(?:1(?:\\.0{0,3})?|0\\.(?:[1-9][0-9]{0,2}|0[1-9][0-9]?|00[1-9]))[ \\t]*)?(?:,.*)?$"
         }
-      ]
+      ],
+      "missing": [
+        {
+          "type": "header",
+          "key": "accept-encoding",
+          "value": "^(?:[^,]*,)*[ \\t]*[bB][rR][ \\t]*;[ \\t]*[qQ][ \\t]*=[ \\t]*0(?:\\.0{0,3})?[ \\t]*(?:,.*)?$"
+        }
+      ],
+      "dest": "/__perf-probe/a-brotli11.html.br",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "br",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "Vary": "Accept-Encoding",
+        "X-Perf-Representation": "precompressed"
+      }
+    },
+    {
+      "src": "^/__perf\\-probe/a\\-brotli11\\.html$",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "headers": {
+        "Vary": "Accept-Encoding",
+        "X-Perf-Representation": "plain-file"
+      },
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
