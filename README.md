@@ -41,5 +41,6 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 - 320, 375, 390, 425 va 1440px ekranlarda beshala dizayn tekshirildi.
 - ZIPdagi asosiy matn va joylashuv saqlangan.
 - 57 ta lokal/mock forma tekshiruvi o‘tdi; haqiqiy tashqi ariza yuborilmadi.
-- Lokal Lighthouse: barcha 10 o‘lchovda Performance 100; mobil Speed Index 791–805ms, desktop 173–214ms. Bu hosting tezligi kafolati emas.
+- Tezlik hozir ochiq Vercel manzilida rasmiy Google PageSpeed Insights orqali tekshiriladi. Maqsad: mobil Speed Index ≤800ms. Performance 100 yoki FCP 0.8s bu maqsad bajarilganini anglatmaydi; oldingi localhost natijalari ochiq hosting natijasi emas.
+- Birinchi ekran rasmlari, lokal shrift va sahifa uslublari HTML bilan birga keladi. Yopiq ariza oynasi uning skripti bilan, pastdagi suratlar esa ko‘rinishiga yaqin yuklanadi. `/` ikkinchi hujjat so‘rovisiz asosiy saytni ochadi.
 - Rasmlar lokal AVIF, shriftlar WOFF2. Yetkazilgan shrift haqidagi qayd har bir variantning `fonts/launch-font-notice.txt` faylida.
