@@ -1,0 +1,16 @@
+Uploaded Launch font — metadata notice
+This notice records the supplied file metadata; it is not a license grant.
+
+Original filename: launch-bold.otf
+Internal family: Nimbus Sans Narrow
+Internal style: Bold
+PostScript name: NimbusSansNarrow-Bold
+Version: Version 1.00
+Copyright: (URW)++,Copyright 2014 by (URW)++ Design & Development
+Original SHA-256: 6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264
+OS/2 fsType value: 4 (0x0004)
+
+No name-table license-description (ID 13) or license-URL (ID 14) is present.
+No accompanying font license document was supplied in the extracted archive.
+Redistribution/web-embedding license terms have not been established from the supplied files.
+The provided font has been subset and encoded as WOFF2; no substitute font or synthesized glyph is used.
