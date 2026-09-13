@@ -1,8 +1,30 @@
-QUALITY UPDATE — previous speed measurements below are HISTORICAL.
-The user rejected soft360/420px portraits; current portraits use850px/q65 from original photos.
-Benefit artwork is600px/q60 and A captions have balanced readable lines.
-Updated Google PSI measurements are pending; do not present the old0.8s values as current.
+JORIY RASM SIFATI VA MOBIL TEZLIK — 2026-09-13
+Measured content commit:84630cc. Quality restored from true original photos; 850px/q65 portraits.
+A captions: balanced two lines,16px Arial. Full card600px/q60; small thumbnail340px/q65.
+Image quality is unchanged by the delivery improvement: hero preload/eager/async, small HTML, reserved image geometry.
+Provider: normal Google PageSpeed Insights UI, Google backend Lighthouse13.4.1, Moto G Power/Slow4G.
+One mobile measurement per listed URL; no retries to select a favorable result. Direct/a/ was not measured separately.
 
+Route | Speed Index(ms) | FCP(ms) | LCP(ms) | CLS | TBT(ms) | Performance
+/ → /a/ | 1498.655 | 779 | 1201 | 0 | 0 | 100
+/b/ | 1009.074 | 764 | 1201 | 0 | 0 | 100
+/c/ | 893.692 | 777 | 1201 | 0 | 0 | 100
+/d/ | 832.556 | 781 | 1201 | 0 | 0 | 100
+/e/ | 772.000 | 772 | 1201 | 0 | 0 | 100
+
+The exact800ms target is NOT met across all variants; only E passes this measurement set.
+D rounds to0.8s in the UI but its exact832.556ms is above800ms.
+Richer photos are visibly clearer; do not substitute old low-resolution measurements for this version.
+Initial large-inline quality-v1 root/B/C SI was2195.978/2327.457/2501.815ms; the current delivery reduces that cost.
+
+Current official reports:
+/ → /a/: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app/zbtitbhkh5?form_factor=mobile
+/b/: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-b/o9p4yo49jc?form_factor=mobile
+/c/: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-c/52xpskobzo?form_factor=mobile
+/d/: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-d/hwo4p14249?form_factor=mobile
+/e/: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-e/ehody6bfd2?form_factor=mobile
+
+HISTORICAL ONLY — LOW-RESOLUTION IMAGES REJECTED BY USER
 MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-13 (Asia/Tashkent)
 Hosting: https://ai5-sayt.vercel.app
 Measured page content: public commit 3a64ae8. Later build-helper/doc changes preserve these exact HTML bytes.

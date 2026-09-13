@@ -50,21 +50,20 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 
 ## Rasm va matn sifati — joriy tuzatish
 
-Foydalanuvchi tezlik uchun kichraytirilgan rasmlarning xiraligini rad etdi. Portretlar haqiqiy original fotosuratlardan 850px/q65 AVIF bilan qayta tayyorlandi; pastdagi eskiz kartochkasi 600px/q60, kichik bonus uchun alohida340px/q65 nusxa ishlatiladi. A izohlari 16px Arial,270px matn eni,1.45 qator oralig‘i va muvozanatli ikki qator bilan o‘qiladi. Matnlar va shrift oilasi saqlangan.
+Foydalanuvchi tezlik uchun kichraytirilgan rasmlarning xiraligini rad etdi. Portretlar haqiqiy original fotosuratlardan 850px/q65 AVIF bilan qayta tayyorlandi; pastdagi eskiz kartochkasi 600px/q60, kichik bonus uchun alohida 340px/q65 nusxa ishlatiladi. A izohlari 16px Arial, 270px matn eni,1.45 qator oralig‘i va muvozanatli ikki qator bilan o‘qiladi. Matnlar va shrift oilasi saqlangan.
 
-Yangi yuklash tartibining rasmiy PSI tekshiruvi kutilmoqda. Katta fotosuratlar endi HTMLga base64 qilib qo‘shilmaydi;850px fayl o‘zgarmagan holda preload/async bilan yuklanadi. Hujjat hajmi Brotli bilan5.2–5.6KB. Quyidagi tezlik qiymatlari past sifatli oldingi rasmlarga tegishli; ularni yangi build natijasi deb ko‘rsatmang.
+Yangi yuklash tartibi rasmiy Google PSI bilan tekshirildi. Katta fotosuratlar endi HTMLga base64 qilib qo‘shilmaydi; 850px fayl o‘zgarmagan holda preload/async bilan yuklanadi. Hujjat hajmi Brotli bilan 5.2–5.6KB. Quyidagi tezlik qiymatlari past sifatli oldingi rasmlarga tegishli; ularni yangi build natijasi deb ko‘rsatmang.
 
-## Oldingi tezlik o‘lchovlari — rasm sifati tuzatilishidan oldin
+## Joriy mobil tezlik — tiniq rasmlar bilan
 
-| Manzil | Mobil Speed Index | O‘lchov |
-| --- | ---: | --- |
-| `/` | 0.779s | Bitta test |
-| `/a/` | 0.783s | Uchta test mediani |
-| `/b/` | 0.788s | Bitta test |
-| `/c/` | 0.767s | Bitta test |
-| `/d/` | 0.770s | Uchta test mediani |
-| `/e/` | 0.774s | Bitta test |
+| Manzil | Speed Index |
+| --- | ---: |
+| `/ → /a/` | 1.499s |
+| `/b/` | 1.009s |
+| `/c/` | 0.894s |
+| `/d/` | 0.833s |
+| `/e/` | 0.772s |
 
-Barcha o‘lchovlarda Performance100, CLS0 va TBT0ms. A testlari: 0.879/0.773/0.783s; D: 2.258/0.763/0.770s. Har bir alohida test ≤0.8s bo‘lmagan. Kod o‘zgarmagan holda ham Google laboratoriya natijalari tebrandi; bitta qulay natija tanlanmadi. Bu barcha tarmoq va keyingi testlar uchun tezlik kafolati emas.
+Barcha besh o‘lchovda Performance **100**, CLS **0** va TBT **0 ms**. Mobil ≤0.8s talabi barcha variantlarda **hali bajarilmagan**; bu to‘plamda faqat E aniq 800ms dan past. Har bir manzil bir marta tekshirildi, qulay natija olish uchun qayta o‘lchanmadi. Asosiy manzil ochilgach `/a/` ko‘rinadi; to‘g‘ridan-to‘g‘ri `/a/` alohida o‘lchanmagan.
 
-[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; rasm sifati tuzatilgan yangi HTML bundan farq qiladi.
+[To‘liq joriy natijalar, rasmiy Google hisobotlari va avvalgi o‘lchovlar](PERFORMANCE.txt). Avvalgi 0.767–0.788s qiymatlar kichik/xira suratlar bilan olingan; ular yangi sifatli versiyaga tegishli emas. Tiniqlikni tiklashdan keyingi katta inline suratlar ham alohida oraliq o‘lchov sifatida saqlangan. Joriy o‘lchangan HTML `84630cc` versiyasiniki; keyingi faqat hisobot/hujjat o‘zgarishlari uning baytlarini o‘zgartirmaydi.
