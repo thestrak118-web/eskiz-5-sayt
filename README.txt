@@ -21,10 +21,16 @@ Ism harflar, bo‘shliq, apostrof, chiziqcha yoki nuqtadan iborat bo‘ladi.
 Endpoint ulanmaguncha yuborish o‘chirilgan, soxta muvaffaqiyat yo‘q.
 POST FormData kalitlari: Ism, Telefon raqam, Royhatdan o'tgan vaqti,
 va sheetName (faqat sozlangan bo‘lsa). Vaqt: Asia/Tashkent.
+To‘g‘ri ism/telefon kiritilgach shu variantning thankYou.html sahifasi darhol ochiladi.
+Ariza shu tabning sessionStorage xotirasida vaqtincha saqlanadi va thank you
+sahifasida fonda yuboriladi. Kalit: webinar.pending:<variant-path>.
 Server HTTP 2xx va {"ok":true}, {"success":true}, {"status":"success"} yoki {"result":"success"}
-JSON tasdig‘ini qaytargach, shu variantning thankYou.html sahifasi ochiladi.
+JSON tasdig‘ini qaytargach vaqtinchalik ariza o‘chiriladi.
+Xatoda ariza saqlanadi va Qayta yuborish tugmasi ko‘rinadi; sahifa yangilansa
+tasdiqlanmagan ariza yana yuboriladi. Bu serverdagi takroriy yozuvlarni kafolatli
+bartaraf etmaydi; tasdiqlangan ariza shu tabda qayta yuborilmaydi.
 Endpoint brauzer so‘rovlarini qabul qilishi kerak (CORS).
-Ism va telefon URL yoki browser storage ichiga yozilmaydi.
+Ism va telefon URL yoki localStorage ichiga yozilmaydi.
 Telegram ulanmaguncha thank you sahifasidagi kanal tugmasi o‘chirilgan.
 
 Dizayn, matnlar, sanalar va Launch shrifti yuborilgan ZIPdan saqlangan.

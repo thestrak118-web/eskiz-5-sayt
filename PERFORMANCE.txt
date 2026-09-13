@@ -1,3 +1,6 @@
+BACKGROUND LEAD UPDATE — 2026-09-14
+Valid registration now opens the supplied thank-you page immediately; its script submits in the background. Temporary pending data lives in tab-scoped sessionStorage until acknowledgment. Landing runtime and thank-you assets changed; the historical PSI results below do not measure this update. Landing HTML and portrait images are unchanged.
+
 INPUT VALIDATION UPDATE — 2026-09-14
 Phone input now enforces country length during editing; rejected pastes do not silently truncate, and names require letters. This changes the closed-form JavaScript after the measurements below. Landing HTML and images are unchanged; performance was not remeasured for this validation fix.
 

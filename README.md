@@ -18,7 +18,9 @@ Foydalanuvchi yuborgan yangi modal barcha variantlarda ishlatiladi: ism, davlat 
 
 Yangi Apps Script manzili har bir variantning `js/config.js` faylida sozlangan. Varaq: **Lead**. FormData kalitlari: `Ism`, `Telefon raqam`, `Royhatdan o'tgan vaqti`, `sheetName`. Vaqt `Asia/Tashkent` bo‘yicha. Davlatlar ro‘yxatida92 tanlov bor; standart `+998`. Ismda harflar bo‘lishi shart; faqat raqamlar yoki harf/raqam aralash qiymat yuborilmaydi. Telefon tanlangan davlatning eng uzun oddiy raqami bilan cheklangan (+998 uchun9). Ortiqcha yozish yoki uzun raqamni nusxalab qo‘yish butun tahrirni rad etadi; oldingi qiymat yashirincha yuborilmasligi uchun raqam tuzatilmaguncha yuborish to‘xtaydi. Formatlash uzun raqamni kesib boshqa raqamga aylantirmaydi; telefon uzunligi tanlangan davlatning oddiy mobil/shahar raqamlariga ko‘ra tekshiriladi. Mamlakatga tegishli mahalliy prefiks olib tashlanadi; Italiya raqamidagi muhim boshlang‘ich nol saqlanadi.
 
-Server HTTP2xx bilan `ok:true`, `success:true`, `status:"success"` yoki `result:"success"` JSON tasdig‘ini qaytargach shu variantning thank-you sahifasi ochiladi. Xatoda ism/telefon saqlanadi va qayta yuborish mumkin. Ism va telefon URL yoki browser storage’iga yozilmaydi; faqat shaxsiy ma’lumotsiz, variantga bog‘langan tasdiq belgisi saqlanadi.
+To‘g‘ri ma’lumot kiritilgach shu variantning `thankYou.html` sahifasi darhol ochiladi. Ariza avval shu tabning `sessionStorage` xotirasiga, variant yo‘liga bog‘langan `webinar.pending:<variant-path>` kalitiga vaqtincha yoziladi. Thank-you sahifasi so‘rovni `keepalive` bilan fonda yuboradi; foydalanuvchi server javobini kutmaydi. Yuborilgan bej/ko‘k namuna, asl SVG strelka va lokal Bebas Neue/Montserrat shriftlari ishlatiladi.
+
+Server HTTP2xx bilan `ok:true`, `success:true`, `status:"success"` yoki `result:"success"` JSON tasdig‘ini qaytargach ism/telefon o‘chiriladi va shaxsiy ma’lumotsiz tasdiq belgisi saqlanadi. Xatoda ariza saqlanadi va **Qayta yuborish** tugmasi chiqadi. Sahifa yangilansa tasdiqlanmagan ariza qayta yuboriladi; tasdiqlangan ariza shu tabda takror yuborilmaydi. Tarmoq javobi yo‘qolgan holatda serverdagi takroriy yozuvni bartaraf qilish uchun backend idempotent bo‘lishi kerak; hozirgi to‘rt kalitli payload o‘zgarmagan. Ism va telefon URL yoki `localStorage` ichiga yozilmaydi.
 
 Telegram kanali va Pixel ID hali berilmagan. Ularni tegishli `telegramUrl` va `pixelId` maydonlariga kiritish mumkin. Ulanishsiz Telegram tugmasi faollashmaydi, Pixel so‘rovi yuborilmaydi.
 
@@ -28,7 +30,7 @@ Tasdiqlangan850px portretlar, shriftlar, ranglar va tuzatilgan soyalar saqlangan
 
 To‘liq sahifa uslubi va lokal shrift HTML bilan keladi. Hero oldindan yuklanadi, pastdagi rasmlar kerak bo‘lganda ochiladi. Forma HTML/CSSi birinchi CTA bosilganda yaratiladi va shu bosishda ochiladi. Tashqi telefon kutubxonasi yoki yangi font so‘rovi qo‘shilmagan.
 
-Quyidagi Google PSI natijalari d4148c5 versiyasiga tegishli (mobil, Lighthouse13.4.1). Keyingi ism/telefon cheklovi JSni o‘zgartirdi; bu tuzatishdan keyin tezlik qayta o‘lchanmagan. Sahifa HTMLi va rasmlar o‘zgarmagan:
+Quyidagi Google PSI natijalari d4148c5 versiyasiga tegishli (mobil, Lighthouse13.4.1). Keyingi ism/telefon cheklovi va thank-you sahifasida fonda yuborish JSni o‘zgartirdi; bu tuzatishlardan keyin tezlik qayta o‘lchanmagan. Landing HTMLi va rasmlar o‘zgarmagan:
 
 | Manzil | Speed Index |
 | --- | ---: |
@@ -46,4 +48,6 @@ Oddiy statik hostingga fayllarni joylash kifoya. Lokal ko‘rish uchun `python3 
 
 Vercel konfiguratsiyasi Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` faylni beradi. HTMLni tahrirlagandan so‘ng `node compress.cjs` ni ishga tushiring va HTML hamda yangilangan `.html.br` fayllarni birga yuklang. `config.js` ni o‘zgartirish HTMLni qayta siqishni talab qilmaydi.
 
-Oldingi integratsiyada316 ta brauzer tekshiruvi o‘tdi (252 asosiy,33 dropdown va31 xalqaro format holati). Yangi ism/telefon cheklovi87 ta alohida tekshiruvdan o‘tdi:5 variantdagi raqam limiti, paste, qayta tahrirlash, kursor, davlat almashtirish, ism va tasdiqlangan thank-you o‘tishi. Haqiqiy tashqi test arizasi yuborilmagan; javoblar brauzer ichida mock qilingan.
+Joriy darhol thank-you va fonda yuborish oqimi 155 ta brauzer tekshiruvidan o‘tdi: barcha variantlar, kechikkan javob, tasdiqdan keyingi tozalash, xato/qayta yuborish, sahifani yangilash, storage xatosi va validatsiya. Haqiqiy tashqi test arizasi yuborilmadi.
+
+Tarixiy: oldingi integratsiyada316 ta brauzer tekshiruvi o‘tdi (252 asosiy,33 dropdown va31 xalqaro format holati). Yangi ism/telefon cheklovi87 ta alohida tekshiruvdan o‘tdi:5 variantdagi raqam limiti, paste, qayta tahrirlash, kursor, davlat almashtirish, ism va tasdiqlangan thank-you o‘tishi. Haqiqiy tashqi test arizasi yuborilmagan; javoblar brauzer ichida mock qilingan.

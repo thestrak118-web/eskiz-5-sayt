@@ -15,18 +15,20 @@
   <main class="header">
     <div class="header-container">
       <section class="hero-left" aria-labelledby="thanks-title">
-        <h1 class="hero-title" id="thanks-title">Ro‘yxatdan o‘tish</h1>
-        <div class="hero-content" id="thanks-content" hidden>
-          <p class="hero-text">Eskiz vebinari tafsilotlarini olish uchun<br>quyidagi tugma orqali Telegram kanaliga <span>obuna bo‘ling</span></p>
+        <h1 class="hero-title" id="thanks-title">Oxirgi qadam qoldi!</h1>
+        <div class="hero-content" id="thanks-content">
+          <p class="hero-text">Bepul darsni qo’lga kiritish uchun <br>quyidagi tugma orqali telegram kanalga <span>obuna bo'ling</span></p>
           <div class="hero-btn-box">
-            <img class="hero-img" src="./assets/thanks-arrow.avif" width="16" height="119" alt="" loading="lazy" decoding="async">
-            <a class="hero-btn thankYouBtn" id="telegram" aria-disabled="true" tabindex="-1">Obuna bo‘lish</a>
+            <img class="hero-img" src="./assets/strelka.svg" width="16" height="119" alt="" loading="lazy" decoding="async">
+            <a class="hero-btn thankYouBtn" id="telegram" aria-disabled="true" tabindex="-1">obuna bo’lish</a>
           </div>
         </div>
         <div class="submission-feedback">
-          <p id="thanks-message" role="status">Ro‘yxatdan o‘tish tasdiqlanmagan. Asosiy sahifaga qaytib, ariza yuboring.</p>
-          <p id="status" role="status" hidden></p>
-          <a id="back-to-webinar" href="./">Asosiy sahifaga qaytish</a>
+          <p id="thanks-message" role="status" hidden></p>
+          <p id="status" role="alert" hidden></p>
+          <p id="channel-status" role="status" hidden></p>
+          <button id="retry-submit" type="button" hidden>Qayta yuborish</button>
+          <a id="back-to-webinar" href="./" hidden>Asosiy sahifaga qaytish</a>
         </div>
       </section>
     </div>
