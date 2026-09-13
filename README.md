@@ -48,7 +48,13 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 - Oxirgi forma o‘zgarishidan keyin 57 ta lokal/mock tekshiruv qayta o‘tdi. 412×823 ekran va DPR1/2/1.75 sinovlarida gorizontal chiqish aniqlanmadi.
 - Rasmlar lokal AVIF, shriftlar WOFF2. Yetkazilgan shrift haqidagi qayd har bir variantning `fonts/launch-font-notice.txt` faylida.
 
-## Ochiq hosting tezligi — 2026-09-13
+## Rasm va matn sifati — joriy tuzatish
+
+Foydalanuvchi tezlik uchun kichraytirilgan rasmlarning xiraligini rad etdi. Portretlar haqiqiy original fotosuratlardan 850px/q65 AVIF bilan qayta tayyorlandi; pastdagi eskiz kartochkasi 600px/q60. A izohlari 16px Arial,270px matn eni,1.45 qator oralig‘i va muvozanatli ikki qator bilan o‘qiladi. Matnlar va shrift oilasi saqlangan.
+
+Yangi versiyaning rasmiy PSI tekshiruvi kutilmoqda. Quyidagi tezlik qiymatlari past sifatli oldingi rasmlarga tegishli; ularni yangi build natijasi deb ko‘rsatmang.
+
+## Oldingi tezlik o‘lchovlari — rasm sifati tuzatilishidan oldin
 
 | Manzil | Mobil Speed Index | O‘lchov |
 | --- | ---: | --- |
@@ -61,4 +67,4 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 
 Barcha o‘lchovlarda Performance100, CLS0 va TBT0ms. A testlari: 0.879/0.773/0.783s; D: 2.258/0.763/0.770s. Har bir alohida test ≤0.8s bo‘lmagan. Kod o‘zgarmagan holda ham Google laboratoriya natijalari tebrandi; bitta qulay natija tanlanmadi. Bu barcha tarmoq va keyingi testlar uchun tezlik kafolati emas.
 
-[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; keyingi siqish yordamchisi va hujjatlar uning baytlarini o‘zgartirmaydi.
+[To‘liq o‘lchovlar va rasmiy Google hisobot havolalari](PERFORMANCE.txt). O‘lchangan HTML `3a64ae8` versiyasiniki; rasm sifati tuzatilgan yangi HTML bundan farq qiladi.

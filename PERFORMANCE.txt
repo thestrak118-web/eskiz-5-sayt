@@ -1,3 +1,8 @@
+QUALITY UPDATE — previous speed measurements below are HISTORICAL.
+The user rejected soft360/420px portraits; current portraits use850px/q65 from original photos.
+Benefit artwork is600px/q60 and A captions have balanced readable lines.
+Updated Google PSI measurements are pending; do not present the old0.8s values as current.
+
 MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-13 (Asia/Tashkent)
 Hosting: https://ai5-sayt.vercel.app
 Measured page content: public commit 3a64ae8. Later build-helper/doc changes preserve these exact HTML bytes.
