@@ -15,6 +15,9 @@ Telegram kanali va Pixel ID hali berilmagan.
 
 Forma ism va davlat kodi bilan telefon so‘raydi. Standart: +998 va 9 raqam.
 92 davlat tanlovi bor; raqam uzunligi davlatga ko‘ra tekshiriladi.
++998 uchun 9 tadan ortiq raqam yozilmaydi. Uzun paste to‘liq rad etiladi;
+oldingi qiymat yuborilmasligi uchun raqamni tuzatish talab qilinadi.
+Ism harflar, bo‘shliq, apostrof, chiziqcha yoki nuqtadan iborat bo‘ladi.
 Endpoint ulanmaguncha yuborish o‘chirilgan, soxta muvaffaqiyat yo‘q.
 POST FormData kalitlari: Ism, Telefon raqam, Royhatdan o'tgan vaqti,
 va sheetName (faqat sozlangan bo‘lsa). Vaqt: Asia/Tashkent.

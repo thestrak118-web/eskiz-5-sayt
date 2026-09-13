@@ -1,4 +1,7 @@
-JORIY MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-14
+INPUT VALIDATION UPDATE — 2026-09-14
+Phone input now enforces country length during editing; rejected pastes do not silently truncate, and names require letters. This changes the closed-form JavaScript after the measurements below. Landing HTML and images are unchanged; performance was not remeasured for this validation fix.
+
+OLDINGI MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-14
 Measured page/runtime commit: d4148c52a4d6330dfb63fbd51e8eb231e2404e6b
 New supplied registration modal + user Apps Script endpoint, with sharp850px portraits.
 Official Google backend Lighthouse13.4.1; Moto G Power / Slow4G.
