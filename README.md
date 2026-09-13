@@ -58,6 +58,8 @@ B sarlavhasi ortida takror ko‘rinayotgan portret olib tashlandi. Asosiy portre
 
 C’da ham sarlavha va asosiy portret ortidagi xira ikkinchi rasm olib tashlandi. Bordo gradient, portretning yumaloq tepasi va pastki o‘tishi saqlangan. Birinchi tugma ustidagi oq bo‘rtmani yo‘qotish uchun uning tashqi bloki shaffof qilindi; tugmaning o‘z chegarasi va joylashuvi saqlangan. Sovg‘a rasmining chap cheti oq kartochka foniga yumshoq o‘tadi; asl rasm fayli va o‘lchami saqlangan.
 
+D’da sarlavha ortidagi xira ikkinchi portret olib tashlandi va sovg‘a rasmining chap cheti oq fonga yumshoq tutashtirildi. Daftar chiziqlari, portretning qiya oq ramkasi va soyasi, matnlar hamda qizil tugmalar saqlangan.
+
 ## Joriy mobil tezlik — tiniq rasmlar bilan
 
 | Manzil | Speed Index |
@@ -70,4 +72,4 @@ C’da ham sarlavha va asosiy portret ortidagi xira ikkinchi rasm olib tashlandi
 
 Barcha besh o‘lchovda Performance **100**, CLS **0** va TBT **0 ms**. Mobil ≤0.8s talabi barcha variantlarda **hali bajarilmagan**; bu to‘plamda faqat E aniq 800ms dan past. Har bir manzil bir marta tekshirildi, qulay natija olish uchun qayta o‘lchanmadi. Asosiy manzil ochilgach `/a/` ko‘rinadi; to‘g‘ridan-to‘g‘ri `/a/` alohida o‘lchanmagan.
 
-[To‘liq joriy natijalar, rasmiy Google hisobotlari va avvalgi o‘lchovlar](PERFORMANCE.txt). Avvalgi 0.767–0.788s qiymatlar kichik/xira suratlar bilan olingan; ular yangi sifatli versiyaga tegishli emas. Tiniqlikni tiklashdan keyingi katta inline suratlar ham alohida oraliq o‘lchov sifatida saqlangan. Jadval `84630cc` versiyasining o‘lchovidir. Keyin B kartochkalarining matn eni va qator oralig‘i, B va C fonidagi takroriy portretlar hamda C tugmasi ustidagi oq bo‘rtma tuzatildi; bu o‘zgarishlardan keyin B/C tezligi qayta o‘lchanmagan. A/D/E sahifalari va barcha rasm fayllari o‘zgarmagan.
+[To‘liq joriy natijalar, rasmiy Google hisobotlari va avvalgi o‘lchovlar](PERFORMANCE.txt). Avvalgi 0.767–0.788s qiymatlar kichik/xira suratlar bilan olingan; ular yangi sifatli versiyaga tegishli emas. Tiniqlikni tiklashdan keyingi katta inline suratlar ham alohida oraliq o‘lchov sifatida saqlangan. Jadval `84630cc` versiyasining o‘lchovidir. Keyin B kartochkalarining matn eni va qator oralig‘i, B/C/D fonidagi takroriy portretlar, C tugmasi ustidagi oq bo‘rtma va C/D sovg‘a rasmi cheti tuzatildi; bu o‘zgarishlardan keyin B/C/D tezligi qayta o‘lchanmagan. A/E sahifalari va barcha rasm fayllari o‘zgarmagan.
