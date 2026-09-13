@@ -1,4 +1,4 @@
-B VISUAL UPDATES: After the84630cc measurements below, B benefit-caption width/line-height/balancing changed, and the duplicate background portrait was removed for a clean headline-to-photo fade. Image assets and the other HTML pages are identical. B was not remeasured after these visual edits.
+B/C VISUAL UPDATES: After the84630cc measurements below, B benefit-caption width/line-height/balancing changed. Duplicate background portraits were removed from B and C; C retains its burgundy gradient, arch and original bottom fade. Image assets and A/D/E HTML are identical. B and C were not remeasured after these visual edits.
 
 JORIY RASM SIFATI VA MOBIL TEZLIK — 2026-09-13
 Measured content commit:84630cc. Quality restored from true original photos; 850px/q65 portraits.
