@@ -16,7 +16,7 @@ Har bir variant mustaqil statik sayt va o‘z `thankYou.html` sahifasiga ega. `/
 
 Foydalanuvchi yuborgan yangi modal barcha variantlarda ishlatiladi: ism, davlat kodi bilan telefon va qizil **DAVOM ETISH** tugmasi. Mobil oynasi oq fon va qora yopish paneli bilan ekran bo‘ylab ochiladi; kompyuterda markaziy dialog ko‘rinadi.
 
-Yangi Apps Script manzili har bir variantning `js/config.js` faylida sozlangan. Varaq: **Lead**. FormData kalitlari: `Ism`, `Telefon raqam`, `Royhatdan o'tgan vaqti`, `sheetName`. Vaqt `Asia/Tashkent` bo‘yicha. Davlatlar ro‘yxatida92 tanlov bor; standart `+998`. Formatlash ortiqcha raqamlarni kesmaydi; telefon uzunligi tanlangan davlatning oddiy mobil/shahar raqamlariga ko‘ra tekshiriladi.
+Yangi Apps Script manzili har bir variantning `js/config.js` faylida sozlangan. Varaq: **Lead**. FormData kalitlari: `Ism`, `Telefon raqam`, `Royhatdan o'tgan vaqti`, `sheetName`. Vaqt `Asia/Tashkent` bo‘yicha. Davlatlar ro‘yxatida92 tanlov bor; standart `+998`. Formatlash ortiqcha raqamlarni kesmaydi; telefon uzunligi tanlangan davlatning oddiy mobil/shahar raqamlariga ko‘ra tekshiriladi. Mamlakatga tegishli mahalliy prefiks olib tashlanadi; Italiya raqamidagi muhim boshlang‘ich nol saqlanadi.
 
 Server HTTP2xx bilan `ok:true`, `success:true`, `status:"success"` yoki `result:"success"` JSON tasdig‘ini qaytargach shu variantning thank-you sahifasi ochiladi. Xatoda ism/telefon saqlanadi va qayta yuborish mumkin. Ism va telefon URL yoki browser storage’iga yozilmaydi; faqat shaxsiy ma’lumotsiz, variantga bog‘langan tasdiq belgisi saqlanadi.
 
@@ -36,4 +36,4 @@ Oddiy statik hostingga fayllarni joylash kifoya. Lokal ko‘rish uchun `python3 
 
 Vercel konfiguratsiyasi Brotli qo‘llaydigan brauzerga oldindan siqilgan `.html.br` faylni beradi. HTMLni tahrirlagandan so‘ng `node compress.cjs` ni ishga tushiring va HTML hamda yangilangan `.html.br` fayllarni birga yuklang. `config.js` ni o‘zgartirish HTMLni qayta siqishni talab qilmaydi.
 
-252 ta brauzer tekshiruvi o‘tdi:25 ekran/variant kombinatsiyasi,10 CTA, validatsiya, davlat tanlovi, tasdiq/xato/qayta yuborish va saqlash holatlari. Haqiqiy tashqi test arizasi yuborilmagan; javoblar brauzer ichida mock qilingan.
+316 ta brauzer tekshiruvi o‘tdi (252 asosiy,33 dropdown va31 xalqaro format holati):25 ekran/variant kombinatsiyasi,10 CTA, validatsiya, davlat tanlovi, tasdiq/xato/qayta yuborish va saqlash holatlari. Haqiqiy tashqi test arizasi yuborilmagan; javoblar brauzer ichida mock qilingan.
