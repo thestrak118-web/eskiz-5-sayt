@@ -1,6 +1,30 @@
-REGISTRATION UPDATE — FINAL DEPLOYMENT MEASUREMENTS PENDING
-2026-09-14: New supplied name/international-phone modal and Apps Script endpoint are integrated. The closed form is still created on first CTA. Country-format and validation data are local; no external font or library was added. Earlier measurements below do not measure the new form runtime.
+JORIY MOBIL GOOGLE PAGESPEED INSIGHTS — 2026-09-14
+Measured page/runtime commit: d4148c52a4d6330dfb63fbd51e8eb231e2404e6b
+New supplied registration modal + user Apps Script endpoint, with sharp850px portraits.
+Official Google backend Lighthouse13.4.1; Moto G Power / Slow4G.
+One measurement each for root(A),B,C,D,E. All results retained; no favorable-result retries.
+Direct /a/ was not measured separately; root serves the A page.
 
+Route | Speed Index(ms) | FCP(ms) | LCP(ms) | CLS | TBT(ms) | Performance
+/ | 1212.315 | 787 | 1276 | 0 | 0 | 100
+/b/ | 762.000 | 762 | 1201 | 0 | 0 | 100
+/c/ | 1118.881 | 769 | 1051 | 0 | 0 | 100
+/d/ | 771.000 | 771 | 1126 | 0 | 0 | 100
+/e/ | 766.000 | 766 | 1051 | 0 | 0 | 100
+
+Exact800ms target: B/D/E pass; root(A) and C still exceed800ms.
+Performance100 and FCP near0.8s do NOT mean the Speed Index target is met.
+Root/C waterfalls show portrait arrival after first paint; no layout shift or blocking-time regression was recorded.
+No low-resolution photo substitution was made. Measurements are dated observations, not latency guarantees.
+
+Official reports:
+/ https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app/9ftoabnx97?form_factor=mobile
+/b/ https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-b/po1irwm3a0?form_factor=mobile
+/c/ https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-c/59jp2otsqq?form_factor=mobile
+/d/ https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-d/3sxjsk9828?form_factor=mobile
+/e/ https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-e/94lmbqipyk?form_factor=mobile
+
+HISTORICAL MEASUREMENTS — DIFFERENT EARLIER CONTENT/RUNTIME
 QUALITY V3 DELIVERY — PRE-MODAL CANDIDATE DIAGNOSTICS
 Content commit535ea79: one official mobile PSI measurement per route. Root SI773ms, FCP773ms, LCP1126ms; E SI852.469ms, FCP798ms, LCP1201ms. Both Performance100, CLS0, TBT0. E exceeds800ms. No favorable-result retries.
 Root: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app/s40c863shh?form_factor=mobile

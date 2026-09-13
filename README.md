@@ -28,7 +28,17 @@ Tasdiqlangan850px portretlar, shriftlar, ranglar va tuzatilgan soyalar saqlangan
 
 To‘liq sahifa uslubi va lokal shrift HTML bilan keladi. Hero oldindan yuklanadi, pastdagi rasmlar kerak bo‘lganda ochiladi. Forma HTML/CSSi birinchi CTA bosilganda yaratiladi va shu bosishda ochiladi. Tashqi telefon kutubxonasi yoki yangi font so‘rovi qo‘shilmagan.
 
-Joriy forma o‘zgarishidan keyingi rasmiy mobil tezlik tekshiruvi kutilmoqda. Oldingi535ea79 versiyada asosiy sahifa SI0.773s, E0.852s chiqdi. Bu qiymatlar yangi forma kodining yakuniy o‘lchovi emas. Barcha variantlarda aniq0.8s talabi bajarilgan deb hisoblanmaydi. To‘liq o‘lchovlar va tarix: [PERFORMANCE.txt](PERFORMANCE.txt).
+Joriy forma va tiniq rasmlar bilan rasmiy Google PSI (mobil, Lighthouse13.4.1):
+
+| Manzil | Speed Index |
+| --- | ---: |
+| / → /a/ | 1.212s |
+| /b/ | 0.762s |
+| /c/ | 1.119s |
+| /d/ | 0.771s |
+| /e/ | 0.766s |
+
+Barcha besh o‘lchovda Performance100, CLS0, TBT0ms. **B/D/E aniq0.8s chegarasiga yetdi; asosiy A va C hali yuqori.** Har bir manzil bir marta tekshirildi. Bu d4148c5 sahifa/runtime versiyasining o‘lchovi; keyingi hujjat tahrirlari shu fayllarni o‘zgartirmaydi. [Rasmiy hisobotlar va oldingi natijalar](PERFORMANCE.txt).
 
 ## Joylash
 
