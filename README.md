@@ -60,6 +60,8 @@ C’da ham sarlavha va asosiy portret ortidagi xira ikkinchi rasm olib tashlandi
 
 D’da sarlavha ortidagi xira ikkinchi portret olib tashlandi va sovg‘a rasmining chap cheti oq fonga yumshoq tutashtirildi. Daftar chiziqlari, portretning qiya oq ramkasi va soyasi, matnlar hamda qizil tugmalar saqlangan.
 
+E’da takroriy fon portreti olib tashlandi, sovg‘a rasmi o‘zining to‘q kartochka foniga yumshoq tutashadi. Hero fonining oxirgi 36px qismi sahifa rangiga o‘tadi, shunda tugma yonidagi keskin rang chizig‘i yo‘qoladi. Portretning maskasi, tiniqligi va barcha elementlarning joylashuvi saqlangan.
+
 ## Joriy mobil tezlik — tiniq rasmlar bilan
 
 | Manzil | Speed Index |
@@ -72,4 +74,4 @@ D’da sarlavha ortidagi xira ikkinchi portret olib tashlandi va sovg‘a rasmin
 
 Barcha besh o‘lchovda Performance **100**, CLS **0** va TBT **0 ms**. Mobil ≤0.8s talabi barcha variantlarda **hali bajarilmagan**; bu to‘plamda faqat E aniq 800ms dan past. Har bir manzil bir marta tekshirildi, qulay natija olish uchun qayta o‘lchanmadi. Asosiy manzil ochilgach `/a/` ko‘rinadi; to‘g‘ridan-to‘g‘ri `/a/` alohida o‘lchanmagan.
 
-[To‘liq joriy natijalar, rasmiy Google hisobotlari va avvalgi o‘lchovlar](PERFORMANCE.txt). Avvalgi 0.767–0.788s qiymatlar kichik/xira suratlar bilan olingan; ular yangi sifatli versiyaga tegishli emas. Tiniqlikni tiklashdan keyingi katta inline suratlar ham alohida oraliq o‘lchov sifatida saqlangan. Jadval `84630cc` versiyasining o‘lchovidir. Keyin B kartochkalarining matn eni va qator oralig‘i, B/C/D fonidagi takroriy portretlar, C tugmasi ustidagi oq bo‘rtma va C/D sovg‘a rasmi cheti tuzatildi; bu o‘zgarishlardan keyin B/C/D tezligi qayta o‘lchanmagan. A/E sahifalari va barcha rasm fayllari o‘zgarmagan.
+[To‘liq joriy natijalar, rasmiy Google hisobotlari va avvalgi o‘lchovlar](PERFORMANCE.txt). Avvalgi 0.767–0.788s qiymatlar kichik/xira suratlar bilan olingan; ular yangi sifatli versiyaga tegishli emas. Tiniqlikni tiklashdan keyingi katta inline suratlar ham alohida oraliq o‘lchov sifatida saqlangan. Jadval `84630cc` versiyasining o‘lchovidir. Keyin B kartochkalarining matn eni va qator oralig‘i, B/C/D/E fonidagi takroriy portretlar, C tugmasi ustidagi oq bo‘rtma, C/D/E sovg‘a rasmi cheti va E hero fonining pastki o‘tishi tuzatildi. Bu o‘zgarishlardan keyin B/C/D/E tezligi qayta o‘lchanmagan; E’dagi 0.772s hozirgi versiyaning yangi o‘lchovi emas. A sahifasi va barcha rasm fayllari o‘zgarmagan.
