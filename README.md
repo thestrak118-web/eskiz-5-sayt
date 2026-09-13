@@ -44,15 +44,15 @@ Forma faqat +998 va 9 raqamli telefonni qabul qiladi. Telefon URL yoki brauzer s
 - ZIPdagi asosiy matn va joylashuv saqlangan.
 - 57 ta lokal/mock forma tekshiruvi o‘tdi; haqiqiy tashqi ariza yuborilmadi.
 - Tezlik ochiq Vercel saytda rasmiy Google PageSpeed Insights (Lighthouse 13.4.1, Moto G Power, Slow 4G) orqali o‘lchandi. Quyidagi qiymatlar mobil Speed Index; FCP yoki localhost natijasi emas.
-- Birinchi ekran rasmlari, lokal shrift va sahifa uslublari HTML bilan birga keladi. Ariza oynasi birinchi CTA bosilganda yaratiladi va shu bosishda ochiladi; uning ishlatilmagan uslublari dastlabki sahifani qayta chizdirmaydi. Pastdagi suratlar ko‘rinishiga yaqin yuklanadi. `/` ikkinchi hujjat so‘rovisiz asosiy saytni ochadi.
+- Lokal shrift va sahifa uslublari HTML bilan birga keladi; tiniq hero rasmi head ichida preload qilinadi va asinxron dekodlanadi. Ariza oynasi birinchi CTA bosilganda yaratiladi va shu bosishda ochiladi; uning ishlatilmagan uslublari dastlabki sahifani qayta chizdirmaydi. Pastdagi suratlar ko‘rinishiga yaqin yuklanadi. `/` ikkinchi hujjat so‘rovisiz asosiy saytni ochadi.
 - Oxirgi forma o‘zgarishidan keyin 57 ta lokal/mock tekshiruv qayta o‘tdi. 412×823 ekran va DPR1/2/1.75 sinovlarida gorizontal chiqish aniqlanmadi.
 - Rasmlar lokal AVIF, shriftlar WOFF2. Yetkazilgan shrift haqidagi qayd har bir variantning `fonts/launch-font-notice.txt` faylida.
 
 ## Rasm va matn sifati — joriy tuzatish
 
-Foydalanuvchi tezlik uchun kichraytirilgan rasmlarning xiraligini rad etdi. Portretlar haqiqiy original fotosuratlardan 850px/q65 AVIF bilan qayta tayyorlandi; pastdagi eskiz kartochkasi 600px/q60. A izohlari 16px Arial,270px matn eni,1.45 qator oralig‘i va muvozanatli ikki qator bilan o‘qiladi. Matnlar va shrift oilasi saqlangan.
+Foydalanuvchi tezlik uchun kichraytirilgan rasmlarning xiraligini rad etdi. Portretlar haqiqiy original fotosuratlardan 850px/q65 AVIF bilan qayta tayyorlandi; pastdagi eskiz kartochkasi 600px/q60, kichik bonus uchun alohida340px/q65 nusxa ishlatiladi. A izohlari 16px Arial,270px matn eni,1.45 qator oralig‘i va muvozanatli ikki qator bilan o‘qiladi. Matnlar va shrift oilasi saqlangan.
 
-Yangi versiyaning rasmiy PSI tekshiruvi kutilmoqda. Quyidagi tezlik qiymatlari past sifatli oldingi rasmlarga tegishli; ularni yangi build natijasi deb ko‘rsatmang.
+Yangi yuklash tartibining rasmiy PSI tekshiruvi kutilmoqda. Katta fotosuratlar endi HTMLga base64 qilib qo‘shilmaydi;850px fayl o‘zgarmagan holda preload/async bilan yuklanadi. Hujjat hajmi Brotli bilan5.2–5.6KB. Quyidagi tezlik qiymatlari past sifatli oldingi rasmlarga tegishli; ularni yangi build natijasi deb ko‘rsatmang.
 
 ## Oldingi tezlik o‘lchovlari — rasm sifati tuzatilishidan oldin
 
