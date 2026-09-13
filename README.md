@@ -2,6 +2,8 @@
 
 3–4–5 sentabr, soat 20:00 bo‘ladigan eskiz vebinari uchun foydalanuvchi yuborgan besh dizayn asosidagi saytlar.
 
+Yuklashning yangi versiyasi: forma va Pixel kodi bitta minifikatsiya qilingan faylda, o‘zgartiriladigan `config.js` undan oldin yuklanadi. A’dagi birinchi ko‘rinadigan kartochka rasmi HTML orqali darhol topiladi. B/E va C/D portretlarida ekranda ko‘rinmaydigan qismlar qisqartirilgan, 850px/q65 aniqlik saqlangan. Quyidagi eski PSI raqamlari bu o‘zgarishlarning yangi o‘lchovi emas; yangi ochiq-sayt tekshiruvi kutilmoqda.
+
 | Manzil | Dizayn |
 | --- | --- |
 | `/` | `/a/` ga o‘tadi |

@@ -1,3 +1,6 @@
+QUALITY V3 DELIVERY UPDATE — AWAITING NEW OFFICIAL MEASUREMENTS
+The current build combines and minifies the form/pixel runtime after editable deferred config.js, keeps bonus thumbnails eager at lower priority, and discovers A's first visible benefit image directly in HTML. B/E hero-only crops are850x950/q65(39712B); C/D850x1000/q65(31280B). Pixels outside every supported hero viewport are omitted; display detail and framing were visually checked at DPR2. A retains its full portrait. The measurements below predate this update.
+
 B/C/D/E VISUAL UPDATES: After the84630cc measurements below, B benefit-caption width/line-height/balancing changed. Duplicate background portraits were removed from B through E; C retains its burgundy gradient, arch and original bottom fade, and D retains its notebook lines and tilted framed portrait. C's first button wrapper is now transparent to remove the white halo above it without changing geometry. C/D/E gift thumbnails have a short left-edge fade into their own card background. E's hero background fades into its page color over the final36px, underneath the unchanged portrait mask. Image assets and A HTML are identical. B/C/D/E were not remeasured after these visual edits; E's old772ms result is not a fresh measurement of this version.
 
 JORIY RASM SIFATI VA MOBIL TEZLIK — 2026-09-13
