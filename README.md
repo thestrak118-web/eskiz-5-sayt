@@ -56,7 +56,7 @@ Yangi yuklash tartibi rasmiy Google PSI bilan tekshirildi. Katta fotosuratlar en
 
 B sarlavhasi ortida takror ko‘rinayotgan portret olib tashlandi. Asosiy portret qora fonga silliq o‘tadi; yuzning tiniqligi va sahifa o‘lchamlari saqlangan.
 
-C’da ham sarlavha va asosiy portret ortidagi xira ikkinchi rasm olib tashlandi. Bordo gradient, portretning yumaloq tepasi va pastki o‘tishi saqlangan. Birinchi tugma ustidagi oq bo‘rtmani yo‘qotish uchun uning tashqi bloki shaffof qilindi; tugmaning o‘z chegarasi va joylashuvi saqlangan.
+C’da ham sarlavha va asosiy portret ortidagi xira ikkinchi rasm olib tashlandi. Bordo gradient, portretning yumaloq tepasi va pastki o‘tishi saqlangan. Birinchi tugma ustidagi oq bo‘rtmani yo‘qotish uchun uning tashqi bloki shaffof qilindi; tugmaning o‘z chegarasi va joylashuvi saqlangan. Sovg‘a rasmining chap cheti oq kartochka foniga yumshoq o‘tadi; asl rasm fayli va o‘lchami saqlangan.
 
 ## Joriy mobil tezlik — tiniq rasmlar bilan
 
