@@ -1,4 +1,12 @@
-QUALITY V3 DELIVERY UPDATE — AWAITING NEW OFFICIAL MEASUREMENTS
+REGISTRATION UPDATE — FINAL DEPLOYMENT MEASUREMENTS PENDING
+2026-09-14: New supplied name/international-phone modal and Apps Script endpoint are integrated. The closed form is still created on first CTA. Country-format and validation data are local; no external font or library was added. Earlier measurements below do not measure the new form runtime.
+
+QUALITY V3 DELIVERY — PRE-MODAL CANDIDATE DIAGNOSTICS
+Content commit535ea79: one official mobile PSI measurement per route. Root SI773ms, FCP773ms, LCP1126ms; E SI852.469ms, FCP798ms, LCP1201ms. Both Performance100, CLS0, TBT0. E exceeds800ms. No favorable-result retries.
+Root: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app/s40c863shh?form_factor=mobile
+E: https://pagespeed.web.dev/analysis/https-ai5-sayt-vercel-app-e/qdg1a3vh8p?form_factor=mobile
+
+QUALITY V3 DELIVERY UPDATE
 The current build combines and minifies the form/pixel runtime after editable deferred config.js, keeps bonus thumbnails eager at lower priority, and discovers A's first visible benefit image directly in HTML. B/E hero-only crops are850x950/q65(39712B); C/D850x1000/q65(31280B). Pixels outside every supported hero viewport are omitted; display detail and framing were visually checked at DPR2. A retains its full portrait. The measurements below predate this update.
 
 B/C/D/E VISUAL UPDATES: After the84630cc measurements below, B benefit-caption width/line-height/balancing changed. Duplicate background portraits were removed from B through E; C retains its burgundy gradient, arch and original bottom fade, and D retains its notebook lines and tilted framed portrait. C's first button wrapper is now transparent to remove the white halo above it without changing geometry. C/D/E gift thumbnails have a short left-edge fade into their own card background. E's hero background fades into its page color over the final36px, underneath the unchanged portrait mask. Image assets and A HTML are identical. B/C/D/E were not remeasured after these visual edits; E's old772ms result is not a fresh measurement of this version.

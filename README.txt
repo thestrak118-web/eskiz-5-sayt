@@ -10,16 +10,18 @@ Ulanishlar: har bir variantning js/config.js faylini to‘ldiring.
 endpointUrl — shu eskiz vebinari uchun Google Apps Script /exec manzili.
 telegramUrl — shu vebinar Telegram kanali.
 pixelId — Meta Pixel ID, kerak bo‘lsa. sheetName — jadval varag‘i, kerak bo‘lsa.
-Hozir bu qiymatlar bo‘sh. Foydalanuvchi ularni oxirida beradi.
+Endpoint foydalanuvchi bergan yangi manzilga ulangan. Varaq: Lead.
+Telegram kanali va Pixel ID hali berilmagan.
 
-Forma faqat telefon so‘raydi: +998 va 9 ta raqam.
+Forma ism va davlat kodi bilan telefon so‘raydi. Standart: +998 va 9 raqam.
+92 davlat tanlovi bor; raqam uzunligi davlatga ko‘ra tekshiriladi.
 Endpoint ulanmaguncha yuborish o‘chirilgan, soxta muvaffaqiyat yo‘q.
-POST FormData kalitlari: Telefon raqam, Royhatdan o'tgan vaqti,
+POST FormData kalitlari: Ism, Telefon raqam, Royhatdan o'tgan vaqti,
 va sheetName (faqat sozlangan bo‘lsa). Vaqt: Asia/Tashkent.
-Server HTTP 2xx va {"ok":true}, {"success":true} yoki {"status":"success"}
+Server HTTP 2xx va {"ok":true}, {"success":true}, {"status":"success"} yoki {"result":"success"}
 JSON tasdig‘ini qaytargach, shu variantning thankYou.html sahifasi ochiladi.
 Endpoint brauzer so‘rovlarini qabul qilishi kerak (CORS).
-Telefon raqami URL yoki browser storage ichiga yozilmaydi.
+Ism va telefon URL yoki browser storage ichiga yozilmaydi.
 Telegram ulanmaguncha thank you sahifasidagi kanal tugmasi o‘chirilgan.
 
 Dizayn, matnlar, sanalar va Launch shrifti yuborilgan ZIPdan saqlangan.
