@@ -1,3 +1,5 @@
+B CAPTION UPDATE: After the84630cc measurements below, only B benefit-caption width/line-height/balancing changed. Image assets and the other HTML pages are identical. B was not remeasured after this small typography edit.
+
 JORIY RASM SIFATI VA MOBIL TEZLIK — 2026-09-13
 Measured content commit:84630cc. Quality restored from true original photos; 850px/q65 portraits.
 A captions: balanced two lines,16px Arial. Full card600px/q60; small thumbnail340px/q65.
